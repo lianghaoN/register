@@ -27,7 +27,7 @@ $(function(){
     function user(){
         var $data = $('#username'),
             $msg = $('#usernamemsg');
-        if(!(/^[\da-zA-Z_\u4e00-\u9f5a]{2,10}$/.test($data)) || $data.val() === ''){
+        if(!(/^[\da-zA-Z_\u4e00-\u9f5a]{2,10}$/.test($data.val())) || $data.val() === ''){
             $msg.html('用户名仅支持中英文，数字和下划线，且不能为纯数字');
             return false;
         }else{
@@ -38,7 +38,7 @@ $(function(){
     function tell(){
         var $data = $('#tellnumber'),
             $msg = $('#tellnumbermsg');
-        if(!(/^1[3456789]\d{9}$/.test($data)) || $data.val() === ''){
+        if(!(/^1[3456789]\d{9}$/.test($data.val())) || $data.val() === ''){
             $msg.html('手机号码格式不正确');
             return false;
         }else{
