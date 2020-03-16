@@ -16,7 +16,7 @@ module.exports = function (grunt) {
     uglify: {
       release:{
         files: {
-          'js/index.min.js': 'js/index.js'
+          'index.min.js': 'index.js'
         }
       }       
     } 
